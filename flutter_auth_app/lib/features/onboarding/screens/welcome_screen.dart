@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
 import '../../../core/constants/app_colors.dart';
-import '../../auth/screens/login_screen.dart';
-import '../../auth/screens/register_screen.dart';
+import '../../auth/presentation/screens/login_screen.dart';
+import '../../auth/presentation/screens/signup_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -107,7 +107,7 @@ class WelcomeScreen extends StatelessWidget {
                     onPressed: () {
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (_) => RegisterScreen()),
+                        MaterialPageRoute(builder: (_) => SignupScreen()),
                       );
                     },
                     child: const Text('Sign Up'),
